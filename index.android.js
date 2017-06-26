@@ -18,5 +18,4 @@ export default class kitchryApp extends Component {
 	}
 }
 
-
 AppRegistry.registerComponent('kitchryApp', () => kitchryApp);
