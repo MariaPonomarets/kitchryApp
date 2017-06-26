@@ -51,11 +51,8 @@ class ReviewYesterday extends Component {
 				<View style={container}>
 					<Image
 						source={{uri: meal.img}}
-						style={imgStyle}
-						onLoadStart={this.loadingStart}
-						onLoadEnd={this.loadingEnd}>
-						{this.loadingImage()}
-					</Image>
+						style={[imgStyle]}
+					/>
 					<View style={descriptionContainer}>
 						<Text style={titleStyle}>{meal.title}</Text>
 						<Text style={subTitleStyle}>{meal.subTitle}</Text>
@@ -98,11 +95,10 @@ const styles = {
 	imgStyle: {
 		height: width / 4,
 		width: width / 4,
-		borderRadius: (width / 4) / 2,
+		borderRadius: width / 8,
 		flexDirection: 'column',
 		justifyContent: 'flex-start',
 		alignItems: 'flex-start',
-		backgroundColor: colors.imgBg,
 		marginRight: 10
 	},
 	titleStyle: {

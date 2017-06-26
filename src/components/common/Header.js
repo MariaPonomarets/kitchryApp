@@ -59,7 +59,7 @@ class Header extends Component {
 }
 const styles = {
 	headerContainer: {
-		height: 60,
+		height: 80,
 		backgroundColor: colors.headerBg
 	},
 	header: {
@@ -68,7 +68,8 @@ const styles = {
 		justifyContent: 'space-between',
 		flexDirection: 'row',
 		paddingLeft: 15,
-		paddingRight: 15
+		paddingRight: 15,
+		paddingTop: 10
 	},
 	titleContainer: {
 		flex: 0.6,
@@ -90,7 +91,7 @@ const styles = {
 	},
 	iosBarHeight: {
 		height: 60,
-		paddingTop: 10
+		paddingTop: 0
 	}
 };
 

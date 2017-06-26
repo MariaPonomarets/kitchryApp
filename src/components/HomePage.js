@@ -25,7 +25,7 @@ class HomePage extends Component {
 const styles = {
 	container: {
 		flex: 1,
-		marginBottom: 80
+		marginBottom: 60
 	}
 };
 const mapStateToProps = ({main}) => {
