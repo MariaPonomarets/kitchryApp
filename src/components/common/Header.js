@@ -18,7 +18,6 @@ const colors = {
 class Header extends Component {
 	constructor (props) {
 		super(props);
-		console.log('header');
 	}
 
 	renderStatusBar () {

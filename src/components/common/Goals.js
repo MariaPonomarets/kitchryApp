@@ -77,14 +77,18 @@ const colors = {
 	imgBg: '#847e7e',
 	activeColor: '#ffa227',
 	textColorWhite: '#fff',
-	subTitle: '#272525'
+	subTitle: '#272525',
+	borderColor: '#847e5e'
 };
 
 const styles = {
 	container: {
 		flex: 1,
 		flexDirection: 'column',
-		padding: 10
+		margin: 10,
+		borderColor: colors.borderColor,
+		borderBottomWidth: 1,
+		paddingBottom: 10
 	},
 	descriptionContainer: {
 		flex: 1,

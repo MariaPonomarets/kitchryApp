@@ -62,10 +62,10 @@ class UpcomingMeals extends Component {
 	}
 
 	render () {
-		const {container, descriptionContainer, imgStyle, imgTitle, titleStyle, subTitleStyle} = styles;
+		const {container, descriptionContainer, imgStyle, imgTitle, buttonStyle, titleStyle, subTitleStyle} = styles;
 		const {meal} = this.state;
 		return (
-			<TouchableWithoutFeedback onPress={this.showDetail}>
+			<TouchableWithoutFeedback onPress={this.showDetail} style={buttonStyle}>
 				<View style={container}>
 					<Image
 						source={{uri: meal.img}}
@@ -92,12 +92,17 @@ const colors = {
 	descriptionBg: '#f1f1f1',
 	descriptionTitleColor: '#000',
 	descriptionSubTitleColor: '#272525',
-	descriptionTextColor: '#584f4f'
+	descriptionTextColor: '#584f4f',
+	borderColor: '#847e5e'
 };
 
 const styles = {
 	container: {
 		flex: 1
+	},
+	buttonStyle: {
+		borderColor: colors.borderColor,
+		borderBottomWidth: 1
 	},
 	descriptionContainer: {
 		padding: 10,

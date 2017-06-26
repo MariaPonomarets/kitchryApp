@@ -138,7 +138,7 @@ class Recommended extends Component {
 		let active = this.state.activeId === index ? 'circle' : 'circle-thin';
 		return (
 			<View key={index} style={{padding: 2}}>
-				<Icon name={active} size={18} color={'orange'}/>
+				<Icon name={active} size={12} color={'orange'}/>
 			</View>
 		);
 
@@ -164,6 +164,7 @@ class Recommended extends Component {
 		);
 	}
 }
+
 const styles = {
 	title: {
 		fontSize: 22,

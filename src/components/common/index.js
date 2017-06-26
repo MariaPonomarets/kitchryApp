@@ -8,3 +8,5 @@ export * from './Spinner';
 export * from './ReviewYesterday';
 export * from './Goals';
 export * from './Recommended';
+export * from './SideMenu';
+export * from './Input';
